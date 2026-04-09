@@ -235,13 +235,13 @@ Note that the `client_payload.github.payload.issue.body` and `client_payload.pul
 
 ### Responding to the comment on command completion
 
-Using [create-or-update-comment](https://github.com/peter-evans/create-or-update-comment) action there are a number of ways you can respond to the comment once the command has completed.
+Using [create-or-update-comment](https://github.com/step-security/create-or-update-comment) action there are a number of ways you can respond to the comment once the command has completed.
 
 The simplest response is to add a :tada: reaction to the comment.
 
 ```yml
       - name: Add reaction
-        uses: peter-evans/create-or-update-comment@v5
+        uses: step-security/create-or-update-comment@v5
         with:
           token: ${{ secrets.PAT }}
           repository: ${{ github.event.client_payload.github.payload.repository.full_name }}
@@ -257,7 +257,7 @@ Another option is to reply with a new comment containing a link to the run outpu
         run: echo "run-url=https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" >> $GITHUB_OUTPUT
 
       - name: Create comment
-        uses: peter-evans/create-or-update-comment@v5
+        uses: step-security/create-or-update-comment@v5
         with:
           token: ${{ secrets.PAT }}
           repository: ${{ github.event.client_payload.github.payload.repository.full_name }}

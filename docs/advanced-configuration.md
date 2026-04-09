@@ -47,13 +47,13 @@ jobs:
                 "command": "rebase",
                 "permission": "admin",
                 "issue_type": "pull-request",
-                "repository": "peter-evans/slash-command-dispatch-processor"
+                "repository": "step-security/slash-command-dispatch-processor"
               },
               {
                 "command": "integration-test",
                 "permission": "write",
                 "issue_type": "both",
-                "repository": "peter-evans/slash-command-dispatch-processor",
+                "repository": "step-security/slash-command-dispatch-processor",
                 "static_args": [
                   "production",
                   "region=us-east-1"
@@ -82,7 +82,7 @@ jobs:
   slashCommandDispatch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - name: Slash Command Dispatch
         uses: step-security/slash-command-dispatch@v5
         with:

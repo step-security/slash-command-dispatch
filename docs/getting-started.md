@@ -19,7 +19,7 @@ Follow this guide to get started with a working `/example` command.
         runs-on: ubuntu-latest
         steps:
           - name: Add reaction
-            uses: peter-evans/create-or-update-comment@v5
+            uses: step-security/create-or-update-comment@v5
             with:
               token: ${{ secrets.PAT }}
               repository: ${{ github.event.client_payload.github.payload.repository.full_name }}

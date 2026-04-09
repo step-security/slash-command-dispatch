@@ -27,9 +27,9 @@
   "author": "step-security",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/peter-evans/slash-command-dispatch/issues"
+    "url": "https://github.com/step-security/slash-command-dispatch/issues"
   },
-  "homepage": "https://github.com/peter-evans/slash-command-dispatch#readme",
+  "homepage": "https://github.com/step-security/slash-command-dispatch#readme",
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.1",
