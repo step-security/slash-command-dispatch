@@ -93,7 +93,7 @@ jobs:
           ref: ${{ steps.vars.outputs.branch }}
 
       # Setup Python environment
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v6
 
       # Install pytest
       - name: Install pytest
@@ -255,7 +255,7 @@ jobs:
           ref: ${{ github.event.client_payload.pull_request.head.ref }}
 
       # Setup Python environment
-      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v6
 
       # Install black
       - name: Install black
