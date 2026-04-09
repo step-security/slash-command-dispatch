@@ -116,8 +116,6 @@ Setting `write` as the required permission level means that any user with `write
 Note that `read`, `triage` and `maintain` are only applicable to organization repositories.
 For repositories owned by a user account there are only two permission levels, the repository owner (`admin`) and collaborators (`write`).
 
-There is a known issue with permissions when using [nested teams](https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams#nested-teams) in a GitHub organization. See [here](https://github.com/step-security/slash-command-dispatch/issues/120) for further details.
-
 #### `dispatch-type`
 
 By default, the action creates [repository_dispatch](https://docs.github.com/en/actions/reference/events-that-trigger-workflows#repository_dispatch) events.
