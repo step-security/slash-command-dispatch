@@ -1,0 +1,18 @@
+{
+   "schema_version": "1",
+   "onboarding_type": "copied",
+   "archived": false,
+   "maintained_action_name": "step-security/slash-command-dispatch",
+   "upstream_full_repo_name": "peter-evans/slash-command-dispatch",
+   "action_type": "node",
+   "last_release": {
+     "tag_name": "v5.0.2",
+     "created_at": "2026-04-09T15:58:30Z",
+     "published_at": "2026-04-09T20:45:11Z"
+   },
+   "sync": {
+     "ignore_presets": [
+       "defaults_v1"
+     ]
+   }
+ }
